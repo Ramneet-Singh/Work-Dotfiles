@@ -79,6 +79,18 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" Ramneet's Custom Commands
+set noesckeys " Otherwise 'O' slows down a lot
+let mapleader = ","
+
+" Window management
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+" Because netrw maps <C-l> to something else
+autocmd filetype netrw nnoremap <buffer> <C-l> <C-w>l
+
 " Ramneet's Custom Files
 source /home/maverick/.vim/tabbing.vim
 source /home/maverick/.vim/auto-pairs.vim
+source /home/maverick/.vim/netrw.vim
