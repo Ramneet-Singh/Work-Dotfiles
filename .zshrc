@@ -85,6 +85,9 @@ alias rm="rm -i "
 # Add jdk to path [PRISM Work]
 export PATH="$PATH:/home/maverick/prism-work/jdk-22.0.1/bin"
 
+PROMPT+=$'\n'
+PROMPT+="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) "
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
