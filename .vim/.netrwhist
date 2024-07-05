@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/maverick/work-dotfiles/.git'
+let g:netrw_dirhist_1='/home/maverick/prism-work/prism-4.8.1-src/manual/InstallingPRISM'
